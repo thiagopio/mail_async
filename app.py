@@ -1,10 +1,11 @@
+# -*- coding: utf-8 -*-
 from bottle import Bottle, route, run, request, response
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.events import EVENT_JOB_EXECUTED, EVENT_JOB_ERROR
 
 
 scheduler = BackgroundScheduler()
-scheduler.start()
+# scheduler.start()
 
 app = Bottle()
 app.mount('/email', app)
