@@ -35,6 +35,7 @@ def test_parse_wrong():
 
 def test_parse_ok():
     parse_mail = Parse(MAIL_XML)
+    assert parse_mail._user_id == '1234'
     assert parse_mail._subject == 'titulo'
     assert parse_mail._from == 'remetente@mail.com'
     assert parse_mail._to == 'destinatario@mail.com'

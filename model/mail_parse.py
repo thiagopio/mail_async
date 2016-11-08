@@ -39,6 +39,5 @@ class Parse(object):
                 date = Util.text2date(self._params.dataagendada.text, Util.UTC_FORMAT)
             except Exception, e:
                 print e
-                pass
         return date
 

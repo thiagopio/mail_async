@@ -13,3 +13,4 @@ class Util(object):
             return datetime.strptime(text, format)
         except Exception, e:
             raise e
+
